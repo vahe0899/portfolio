@@ -3,7 +3,7 @@ const body = document.querySelector("body");
 
 function leaveTransition() {
   return gsap.to(".transition", {
-    height: "100vh",
+    height: "100%",
     duration: 0.8,
     ease: "power4.inOut",
   });
@@ -185,6 +185,7 @@ function skillsAnimation() {
     },
   });
 }
+
 function projectsAnimation() {
   gsap.fromTo(
     ".projects-overlay__title",

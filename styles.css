@@ -8,6 +8,14 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: relative;
+    background-image: url(./vahe.jpg);
+    background-size: cover;
+    background-position-y: -50vh;
+}
+
+.index-overlay {
+    opacity: 0.9;
 }
 
 .index-overlay, .projects-overlay, .skills-overlay {
@@ -22,6 +30,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .projects-overlay, .skills-overlay {
     justify-content: space-between;
 }
@@ -39,13 +48,6 @@ body {
 
 .projects-overlay__container {
     margin-top: 8vh;
-}
-
-.index-overlay__background-img {
-    opacity: .1;
-    top: -50vh;
-    position: absolute;
-    height: calc(var(--index) * 100);
 }
 
 h1, h2, h3 {
@@ -188,7 +190,7 @@ a {
 
 .transition {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
