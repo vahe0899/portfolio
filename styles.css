@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+:root {
+	--index: calc(1vw + 1vh);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.index-overlay, .projects-overlay, .skills-overlay {
+    font-family: 'PT Mono', monospace;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: linear-gradient(270deg, rgba(0,14,41,1) 0%, rgba(40,1,30,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects-overlay, .skills-overlay {
+    justify-content: space-between;
+}
+.skills-overlay, .index-overlay {
+    height: 100vh;
+    width: 100vw;
+}
+
+.index-overlay__container, .skills-overlay__container, .projects-overlay__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-overlay__container {
+    margin-top: 8vh;
+}
+
+.index-overlay__background-img {
+    opacity: .1;
+    top: -50vh;
+    position: absolute;
+    height: calc(var(--index) * 100);
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: calc(var(--index) * 3);  
+}
+
+h2 {
+    font-size: calc(var(--index) * 2);  
+}
+
+.index-overlay__button {
+    z-index: 1;
+    position: absolute;
+    bottom: 5vh;
+}
+
+.index-overlay__button:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #000000;
+    box-shadow: 0px 0px 51px 0px rgba(255, 255, 255, 0.35);
+}
+
+.skills-overlay__top-button, .skills-overlay__bottom-button, 
+.index-overlay__button, .projects-overlay__top-button, .projects-overlay__top-button {
+    height: calc(var(--index) * 3);
+    width: calc(var(--index) * 9);
+    font-size: calc(var(--index) * .7);
+    font-weight: bold;
+    background-color: #00000000;
+    color: #ffffff;
+    border-radius: 8px;
+    border: solid 0.2vh;
+    cursor: pointer;
+    transition: .5s;
+    z-index: 1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-overlay__top-button, .projects-overlay__top-button {
+    margin-top: 5vh;
+}
+
+.skills-overlay__bottom-button {
+    margin-bottom: 5vh;
+}
+
+.skills-overlay__bottom-button:hover, .skills-overlay__top-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0px 0px 51px 0px rgba(255, 255, 255, 0.35);
+}
+
+.skills__item {
+    display: flex;
+    cursor: default;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: calc(var(--index));
+    padding: calc(var(--index) * .5) calc(var(--index));
+    margin: calc(var(--index) * .5) calc(var(--index)*5);  
+    width: calc(var(--index) * 5);
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center ;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.projects-overlay__top-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0px 0px 51px 0px rgba(255, 255, 255, 0.35);
+}
+
+.projects__item {
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: calc(var(--index));
+    padding: calc(var(--index) * .5) calc(var(--index));
+    margin: calc(var(--index) * .5) calc(var(--index)*3);  
+    width: calc(var(--index) * 12);
+    height: calc(var(--index) * 12);
+    cursor: pointer;
+}
+
+.projects__title {
+    border-bottom: solid 1px #ffffff;
+    padding-bottom: calc(var(--index) * .5);
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.projects__description {
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center ;
+}
+
+.projects__item:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0px 0px 51px 0px rgba(255, 255, 255, 0.35);
+}
+
+.projects__item:hover > .projects__title {
+    border-bottom: solid 1px #000000;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.transition {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 484;
+}
