@@ -147,7 +147,7 @@ h2 {
     border-radius: 8px;
     font-size: calc(var(--index));
     padding: calc(var(--index) * .5) calc(var(--index));
-    margin: calc(var(--index) * .5) calc(var(--index)*3);  
+    margin: calc(var(--index) * 1.5) calc(var(--index)*1.5);  
     width: calc(var(--index) * 12);
     height: calc(var(--index) * 12);
     cursor: pointer;
